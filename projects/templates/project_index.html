@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+
+    <h1 class="text-center ml-auto mr-auto mb-5 pb-5" style="font-size: 300%; color: #003049;
+    font-family: 'Helvetica Neue', sans-serif;">
+        <strong>Projects</strong>
+    </h1>
+
+    <div class="row">
+    {% for project in projects %}
+        <div class="col-sm-4 mb-5 pb-2">
+            <div class="card text-center mb-2" style="border-radius: 12px; max-width: 21rem;
+            box-shadow: rgba(233, 240, 243, 0.5) 0px 8px 8px 0px, rgb(230, 236, 248) 0px 1px 0px 0px;">
+                <img class="card-img-top p-1" src="{% static project.image %}" alt="Project Image">
+                <div class="card-body">
+                    <h4 class="card-title mt-1 mb-4">{{ project.title }}</h4>
+                    <p class="card-text mt-3 mb-4">{{ project.description }}</p>
+                    <a href="{% url 'project_detail' project.pk %}"
+                    style="text-decoration: none; color: #D62828">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

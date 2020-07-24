@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg mb-5">
+    <div class="container">
+        <a class="navbar-brand text-monospace font-weight-bold" href="{% url 'project_index' %}" style="font-family: monospace, monospace; font-size: x-large; color: #003049">&lt;/home&gt;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto justify-content-end">
+                <li class="nav-item hover mr-2">
+                    <a class="nav-link" href="{% url 'project_index' %}">
+                        <style>
+                            a {
+                                color: grey;
+                            }
+                            a:hover {
+                                color: black;
+                            }
+                            a:focus:active {
+                                color: black;
+                                outline: none;
+                            }
+                        </style>
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item hover mr-2">
+                    <a class="nav-link" href="{% url 'project_index' %}">
+                        Projects
+                    </a>
+                </li>
+                <li class="nav-item hover mr-2">
+                    <a class="nav-link" href="{% url 'project_index' %}">
+                        Work Experience
+                    </a>
+                </li>
+                <li class="nav-item hover mr-2">
+                    <a class="nav-link" href="{% url 'project_index' %}">
+                        Certificates
+                    </a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class=" nav-link btn btn-danger" href="mailto:pablo_blancoc@outlook.es" style="color: #FFFFFF;
+                     border-radius: 0.5rem">
+                        Get in Touch
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<div class="container mt-3 mb-3">
+    {% block page_content %}{% endblock %}
+</div>
+
+<!-- Footer -->
+<footer class="page-footer mt-5" style="background-color: #003049">
+  <!-- Footer Links -->
+    <div class="container">
+        <!-- Grid row -->
+        <div class="row">
+            <!-- LAPTOP IMAGE -->
+            <svg class="ml-auto mr-auto mt-5" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                   style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none">
+                </path>
+                    <g fill="#ffffff">
+                        <path d="M27.52,27.52c-7.71592,0 -13.76,6.04408 -13.76,13.76v75.68c0,2.53872 0.70542,4.86072 1.85437,6.88h-8.73437c-1.90232,0 -3.44,1.53768 -3.44,3.44c0,9.48408 7.71592,17.2 17.2,17.2h130.72c9.48408,0 17.2,-7.71592 17.2,-17.2c0,-1.90232 -1.53768,-3.44 -3.44,-3.44h-8.73437c1.14896,-2.01928 1.85437,-4.34128 1.85437,-6.88v-75.68c0,-7.71592 -6.04408,-13.76 -13.76,-13.76zM27.52,34.4h116.96c3.92504,0 6.88,2.95496 6.88,6.88v75.68c0,3.92504 -2.95496,6.88 -6.88,6.88h-116.96c-3.92504,0 -6.88,-2.95496 -6.88,-6.88v-75.68c0,-3.92504 2.95496,-6.88 6.88,-6.88zM91.15328,51.55297c-1.63539,0.00697 -3.03985,1.16424 -3.35938,2.76813l-10.32,48.16c-0.25719,1.20273 0.14691,2.4513 1.06005,3.27524c0.91314,0.82394 2.19653,1.09804 3.3666,0.71901c1.17006,-0.37903 2.04897,-1.35358 2.30554,-2.55645l10.32,-48.16c0.23374,-1.02395 -0.01305,-2.09858 -0.67012,-2.91795c-0.65707,-0.81937 -1.65242,-1.29371 -2.70269,-1.28799zM62.04765,61.87969c-1.13595,-0.0325 -2.21467,0.49806 -2.88234,1.41766l-11.86531,15.82265l11.86531,15.82265c1.13917,1.52137 3.29597,1.8312 4.81734,0.69203c1.52137,-1.13917 1.8312,-3.29597 0.69203,-4.81734l-8.77469,-11.69735l8.77469,-11.69735c0.79195,-1.02461 0.94145,-2.40713 0.38684,-3.57735c-0.55461,-1.17022 -1.71937,-1.92986 -3.01387,-1.96562zM109.85156,61.8864c-1.27389,0.07328 -2.40259,0.84561 -2.9323,2.00646c-0.52971,1.16085 -0.37341,2.51953 0.40605,3.52979l8.77469,11.69735l-8.77469,11.69735c-1.13917,1.52137 -0.82934,3.67817 0.69203,4.81734c1.52137,1.13917 3.67817,0.82934 4.81734,-0.69203l11.86531,-15.82265l-11.86531,-15.82265c-0.68921,-0.94764 -1.81335,-1.47934 -2.98312,-1.41094zM10.91125,130.72h16.60875h116.96h16.60875c-1.42072,4.00416 -5.24299,6.88 -9.72875,6.88h-130.72c-4.48576,0 -8.30803,-2.87584 -9.72875,-6.88z">
+
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <!-- PHRASE -->
+        <div class="row">
+            <h3 class="font-weight-light mr-auto ml-auto mt-3" style="color:#FFFFFF">Busy being happy</h3>
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center mt-3 mb-3">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-in mx-1" href="https://www.instagram.com/pablo_blancoc/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M49.92548,0c-27.49519,0 -49.92548,22.43029 -49.92548,49.92548v72.14904c0,27.49519 22.43029,49.92548 49.92548,49.92548h72.14904c27.49519,0 49.92548,-22.43029 49.92548,-49.92548v-72.14904c0,-27.49519 -22.43029,-49.92548 -49.92548,-49.92548zM49.92548,13.23077h72.14904c20.33714,0 36.69471,16.33173 36.69471,36.69471v72.14904c0,20.33714 -16.33173,36.69471 -36.69471,36.69471h-72.14904c-20.33714,0 -36.69471,-16.33173 -36.69471,-36.69471v-72.14904c0,-20.33714 16.33173,-36.69471 36.69471,-36.69471zM135.61538,26.46154c-5.47837,0 -9.92308,4.44471 -9.92308,9.92308c0,5.47837 4.44471,9.92308 9.92308,9.92308c5.47837,0 9.92308,-4.44471 9.92308,-9.92308c0,-5.47837 -4.44471,-9.92308 -9.92308,-9.92308zM86,39.69231c-25.50541,0 -46.30769,20.80228 -46.30769,46.30769c0,25.50541 20.80228,46.30769 46.30769,46.30769c25.50541,0 46.30769,-20.80228 46.30769,-46.30769c0,-25.50541 -20.80228,-46.30769 -46.30769,-46.30769zM86,52.92308c18.34736,0 33.07692,14.72957 33.07692,33.07692c0,18.34736 -14.72956,33.07692 -33.07692,33.07692c-18.34735,0 -33.07692,-14.72956 -33.07692,-33.07692c0,-18.34735 14.72957,-33.07692 33.07692,-33.07692z"></path></g></g></svg>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-git mx-1" href="https://github.com/pablo-blancoc" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,32.23853 22.19947,59.21387 52.12747,66.67867c-0.32107,-0.9288 -0.52747,-2.00667 -0.52747,-3.34253v-11.75907c-2.79213,0 -7.47053,0 -8.64587,0c-4.70707,0 -8.8924,-2.02387 -10.922,-5.78493c-2.2532,-4.1796 -2.64307,-10.57227 -8.22733,-14.4824c-1.65693,-1.30147 -0.3956,-2.7864 1.5136,-2.58573c3.526,0.9976 6.45,3.41707 9.202,7.00613c2.74053,3.5948 4.03053,4.40893 9.1504,4.40893c2.48253,0 6.19773,-0.14333 9.69507,-0.69373c1.88053,-4.77587 5.13133,-9.17333 9.10453,-11.2488c-22.9104,-2.3564 -33.84387,-13.75427 -33.84387,-29.22853c0,-6.66213 2.838,-13.1064 7.65973,-18.53587c-1.5824,-5.38933 -3.57187,-16.38013 0.60773,-20.56547c10.30853,0 16.54067,6.68507 18.03707,8.49107c5.13707,-1.76013 10.77867,-2.75773 16.70693,-2.75773c5.93973,0 11.60427,0.9976 16.7528,2.7692c1.4792,-1.79453 7.71707,-8.50253 18.04853,-8.50253c4.1968,4.19107 2.1844,15.22773 0.5848,20.6056c4.79307,5.418 7.61387,11.84507 7.61387,18.49573c0,15.4628 -10.91627,26.85493 -33.79227,29.2228c6.2952,3.2852 10.8876,12.51587 10.8876,19.4704v15.67493c0,0.59627 -0.13187,1.02627 -0.20067,1.53653c26.80907,-9.39693 46.06733,-34.85293 46.06733,-64.87267c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z"></path></g></g></svg>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-mail mx-1" href="mailto:pablo_blancoc@outlook.es" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M0,24.08v123.84h172v-123.84zM6.88,30.96h158.24v110.08h-158.24zM13.76,47.87781v8.11625l72.24,40.94406l72.24,-40.94406v-8.11625l-72.24,40.94406z"></path></g></g></svg>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+    <div class="row">
+        <p class="footer-copyright text-center ml-auto mr-auto mb-4" style="color:whitesmoke">Handcrafted by
+            @pablo_blancoc - © 2020<br>Build with <strong>Django</strong>
+        </p>
+    </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
