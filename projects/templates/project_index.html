@@ -1,12 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
+{% block title %} Pablo's Projects {% endblock %}
 
 {% block page_content %}
 
-    <h1 class="text-center ml-auto mr-auto mb-5 pb-5" style="font-size: 300%; color: #003049;
+    <h1 class="text-center ml-auto mr-auto mb-5" style="font-size: 300%; color: #003049;
     font-family: 'Helvetica Neue', sans-serif;">
         <strong>Projects</strong>
     </h1>
+    <h6 class="text-center ml-auto mr-auto mb-5 pb-5 font-weight-normal" style="color: dimgray;
+    font-family: 'Helvetica Neue', sans-serif; font-size: large">
+        Here are some cool projects I've done in the past or are currently in development.
+    </h6>
 
     <div class="row">
     {% for project in projects %}
