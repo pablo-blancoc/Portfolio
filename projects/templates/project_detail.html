@@ -14,15 +14,15 @@
         <p>{{ project.description }}</p>
         <br>
         <h5>Skills used:</h5>
-        <div class="row mb-5">
+        <div class="row mb-5" style="min-height: max-content">
             <span class="badge badge-info mr-3">{{ project.technology1 }}</span>
             <span class="badge badge-info mr-3">{{ project.technology2 }}</span>
             <span class="badge badge-info mr-3">{{ project.technology3 }}</span>
         </div>
         <br>
         <a href="{{ project.link }}"
-           style="font-family: 'Helvetica Neue', sans-serif; color: #D62828;
-           position: center" target="_blank" class="font-weight-bold">
+           style="font-family: 'Helvetica Neue', sans-serif; color: #FFFFFF; text-align: center;
+           position: center; min-width: 100%" target="_blank" class="font-weight-bold btn btn-danger">
             {{ project.link_text }}
         </a>
 
