@@ -14,6 +14,6 @@ ever have a doubt of the code or want to know how was I able to code this in a w
 without having ever done a Django project before just send me a message!
 </p>
 <p>
-When the web page is finished I'll upload the link so you can browse on it.
+Link in the description of the project! <br>
 </p>
 ;)
