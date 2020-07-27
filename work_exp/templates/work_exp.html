@@ -75,5 +75,18 @@ font-family: 'Helvetica Neue', sans-serif;">
         These are some certificates or diplomas I have gotten in the last years.
     </h6>
 
+    <div class="row">
+    {% for certificate in certificates %}
+    <div class="col-sm-6 mb-5 pb-2">
+        <div class="card text-center mb-2" style="border-radius: 12px; min-height: 100%;
+            box-shadow: rgba(240, 240, 240, 0.5) 0px 8px 8px 0px, rgb(240, 240, 240) 0px 2px 0px 0px; border-width: 1px">
+            <img class="card-img-top p-1" src="{% static certificate.image %}" alt="Certificate Image">
+            <div class="card-body">
+                <h4 class="card-title mt-1 mb-4">{{ certificate.title }}</h4>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
 
 {% endblock %}

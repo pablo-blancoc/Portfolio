@@ -9,3 +9,8 @@ class Company(models.Model):
     start_date = models.CharField(default='start date', max_length=15)
     end_date = models.CharField(default='end date', max_length=15)
     logo = models.FilePathField(path='/img', default="default")
+
+
+class Certificate(models.Model):
+    image = models.FilePathField(path='/img', default='default')
+    title = models.CharField(max_length=20, default='default')
