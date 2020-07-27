@@ -7,3 +7,6 @@ __pycache__/
 *.pot
 *.pyc
 local_settings.py
+img/
+settings.py
+db.sqlite3
