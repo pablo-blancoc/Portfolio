@@ -7,3 +7,7 @@ settings.py
 db.sqlite3
 *.svg
 img/
+*.log
+*.pot
+*.pyc
+local_settings.py
