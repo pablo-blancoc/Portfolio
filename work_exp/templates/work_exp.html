@@ -10,12 +10,12 @@
     </h1>
     <h6 class="text-center ml-auto mr-auto mb-5 pb-5 font-weight-normal" style="color: dimgray;
     font-family: 'Helvetica Neue', sans-serif; font-size: large">
-        These are the companies I have worked for, or that I'm currently working.
+        These are the companies I have worked for, or that I'm currently working in.
     </h6>
 
 
     {% for company in companies %}
-        <div class="card text-center m-5" style="border-radius: 12px; max-width: 90%; max-height: max-content;
+        <div class="card text-center m-5 p-2" style="border-radius: 12px; max-width: 90%; max-height: max-content;
             box-shadow: rgba(233, 240, 243, 0.5) 0px 8px 8px 0px, rgb(230, 236, 248) 0px 1px 0px 0px;">
             <div class="row">
                 <div class="col-4">
@@ -24,15 +24,56 @@
                 </div>
                 <div class="col-8">
                     <div class="card-body">
-                        <h5 class="card-title mt-1 mb-4" style="color: dimgray">{{ company.name }}</h5>
+                        <h5 class="card-title mt-4 mb-4" style="color: dimgray">{{ company.name }}</h5>
                         <h3 class="card-title mt-1 mb-4">{{ company.position }}</h3>
                         <p class="card-text mt-3 mb-4">{{ company.description }}</p>
+                        <p class="card-text mt-3 mb-4" style="color: dimgray">{{ company.start_date }} - {{ company.end_date }}</p>
                     </div>
                 </div>
             </div>
         </div>
 
     {% endfor %}
+
+    <h1 class="text-center ml-auto mr-auto m-5 pt-5" style="font-size: 300%; color: #003049;
+font-family: 'Helvetica Neue', sans-serif;">
+        <strong>My Studies</strong>
+    </h1>
+    <h6 class="text-center ml-auto mr-auto mb-5 pb-5 font-weight-normal" style="color: dimgray;
+    font-family: 'Helvetica Neue', sans-serif; font-size: large">
+        This is where I'm currently studying.
+    </h6>
+
+    <div class="card text-center m-5 p-2" style="border-radius: 12px; max-width: 90%; max-height: max-content;
+            box-shadow: rgba(233, 240, 243, 0.5) 0px 8px 8px 0px, rgb(230, 236, 248) 0px 1px 0px 0px;">
+        <div class="row">
+            <div class="col-4">
+                <img class="card-img p-5" src="{% static 'img/logo_tec.svg' %}" alt="Company Logo"
+                    style=": ">
+            </div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-title mt-4 mb-4" style="color: dimgray">Tecnológico de Monterrey</h5>
+                    <h3 class="card-title mt-1 mb-4">Computer Science & Engineering</h3>
+                    <p class="card-text mt-3 mb-4">
+                        I'm have an special interest in Artificial Intelligence which is where I plan to specialize.
+                    </p>
+                    <p class="card-text mt-3 mb-4" style="color: dimgray">
+                        Fall 2019 - current
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center ml-auto mr-auto m-5 pt-5" style="font-size: 300%; color: #003049;
+font-family: 'Helvetica Neue', sans-serif;">
+        <strong>Certificates or Diplomas</strong>
+    </h1>
+    <h6 class="text-center ml-auto mr-auto mb-5 pb-5 font-weight-normal" style="color: dimgray;
+    font-family: 'Helvetica Neue', sans-serif; font-size: large">
+        These are some certificates or diplomas I have gotten in the last years.
+    </h6>
 
 
 {% endblock %}
