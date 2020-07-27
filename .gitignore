@@ -3,10 +3,6 @@
 venv/
 .DS_Store
 __pycache__/
-settings.py
-db.sqlite3
-*.svg
-img/
 *.log
 *.pot
 *.pyc
